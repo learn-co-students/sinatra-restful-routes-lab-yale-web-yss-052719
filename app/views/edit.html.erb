@@ -1,0 +1,7 @@
+<h1> Edit Recipe </h1>
+<%= form_for @recipe do |a| %>
+    <%= a.text_field :name, value: @recipe.name %>
+    <%= a.text_field :ingredients, value: @recipe.ingredients %>
+    <%= a.text_field :ingredients, value: @recipe.cook_time %>
+    <%= a.submit %>
+<% end %>
